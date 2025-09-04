@@ -1,0 +1,319 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #c59d5f;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background: #111;
+    padding: 0.8rem 0;
+}
+
+.navbar .brand-icon {
+    color: #c59d5f;
+    font-size: 1.5rem;
+}
+
+.navbar .brand-text {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    margin-right: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #c59d5f;
+}
+
+/* =========================
+   PAGE HEADER
+========================= */
+.page-header {
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('images/perfume-banner.jpg') center/cover no-repeat;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.page-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.page-divider {
+    width: 60px;
+    height: 3px;
+    background: #c59d5f;
+    margin: 20px auto 0;
+}
+
+/* =========================
+   FILTER BAR
+========================= */
+.filter-section {
+    padding: 20px 0;
+    background: #fafafa;
+    border-bottom: 1px solid #eee;
+}
+
+.filter-buttons .btn {
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-weight: 500;
+}
+
+.filter-buttons .btn.active {
+    background: #c59d5f;
+    color: #fff;
+    border-color: #c59d5f;
+}
+
+.sort-select {
+    border-radius: 25px;
+}
+
+/* =========================
+   PRODUCTS GRID
+========================= */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.08);
+}
+
+.product-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.product-overlay .btn {
+    background: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.product-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #c59d5f;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.product-badge.sale {
+    background: #e74c3c;
+}
+
+/* Product Info */
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.product-brand {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.product-rating {
+    color: #ffc107;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    margin-bottom: 15px;
+}
+
+.current-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.original-price {
+    font-size: 0.9rem;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+
+/* Add to Cart */
+.btn-add-cart {
+    background: #c59d5f;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-add-cart:hover {
+    background: #a57d3b;
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+.newsletter-section {
+    background: #111;
+    padding: 60px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.newsletter-form .form-control {
+    border-radius: 25px 0 0 25px;
+    padding: 12px;
+}
+
+.btn-subscribe {
+    background: #c59d5f;
+    color: #fff;
+    border-radius: 0 25px 25px 0;
+    padding: 0 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-subscribe:hover {
+    background: #a57d3b;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background: #222;
+    color: #ddd;
+    padding: 40px 0 20px;
+    font-size: 0.9rem;
+}
+
+.footer .brand-icon {
+    color: #c59d5f;
+    font-size: 1.3rem;
+}
+
+.footer .brand-text {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-link {
+    display: inline-block;
+    color: #ddd;
+    margin: 0 8px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #c59d5f;
+}
