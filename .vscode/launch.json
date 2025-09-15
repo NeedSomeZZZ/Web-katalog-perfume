@@ -8,7 +8,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Open landing page.html",
-            "file": "e:\\VSCode\\Perfume Website Project\\landing page.html"
+            "file": "E:\\VSCode\\Perfume Website Project\\.vscode"
         }
     ]
 }
